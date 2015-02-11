@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>孝感微生活-孝感尽在掌握中</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>  
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+
+	jQuery(document).ready(function($) {	
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+<!---- start-smoth-scrolling---->
+<!---image-carsuals---->
+	    <link href="css/owl.carousel.css" rel="stylesheet">
+	    <link href="css/owl.theme.css" rel="stylesheet">
+   		<script src="js/owl.carousel.js"></script>
+   		<script>		
+function isWeiXin(){
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function isIOS(){
+   if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad)/i))) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+	    $(document).ready(function() {
+	    	if(isWeiXin()){
+				if(isIOS()){
+		    		$("#wxhint").text("微信用户如果无法下载，请点击当前界面右上角的三个点，然后“在Safari中打开”并安装");
+		    	}
+		    	else{
+		    		$("#wxhint").text("微信用户如果无法下载，请点击当前界面右上角的三个点，然后“在浏览器中打开”并安装");
+		    	}	    		
+	    		$("#wxhint").show();
+	    	}
+	    	else{
+	    		$("#wxhint").hide();
+	    	}
+
+
+	      $("#owl-demo").owlCarousel({
+	      	navigation: true,
+		    navigationText: [
+		      "<i class='icon-chevron-left icon-white'></i>",
+		      "<i class='icon-chevron-right icon-white'></i>"
+		      ],
+	        items :3,
+	        slideSpeed :100,
+	        lazyLoad : true,
+	        autoPlay : true,
+	      });
+	    });
+	    </script>
+   		<!---//End-carsuals---->
+
+</head>
+<body>
+	<div class="banner" id="home">
+		<div class="container">
+			<div class="header">
+				<div class="header-left">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+				
+				<div class="menu">
+                   <a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt="" /> </a>
+
+					<ul class="nav" id="nav">
+						<li><a href="#home" class="scroll">主页</a></li>
+						<li><a href="#contact" class="scroll">联系</a></li>
+					</ul>
+                                  <!----start-top-nav-script---->
+		                      <script type="text/javascript" src="js/responsive-nav.js"></script>
+
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+
+		<!----//End-top-nav-script---->
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="banner-bottom">
+				<div class="col-md-6">
+					<div class="banner-bottom-left">
+						<img src="images/phone.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="banner-bottom-right">
+						<h1>孝感微生活</h1>
+						<h3>孝感尽在掌握中</h3>
+						<p>孝感微生活是一款集孝感本地生活休闲娱乐、衣食住行于一体的手机客户端，随时随地了商家活动信息；快速查询商家电话地址，帮助您更加了解孝感，带给您最便捷的服务。</p>
+						<ul>
+							<li><a class="active" href="#download">下载 APP</a></li>
+							<li><a href="#">了解更多</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+	<!--download-starts-Here-->
+	<div class="download" id="download">
+		<div class="container">
+			<div class="download-top">
+				<h3>下载孝感微生活</h3>
+				<p id="wxhint" class="lorem">微信用户，请点击当前界面右上角的三个点，然后“在Safari中打开”并安装</p>
+				<img src="images/border.png" alt="">
+				<ul>
+					<li id="d_android"><a href="https://xgw.avosapps.com/download/xgw.apk">
+						
+						<span class="d"></span>
+						<div class="d-1">
+							
+							<p class="a">Android 2.3 以上版本</p>
+							<h6 class="google">Android 下载</h6>
+						</div>
+					</a>
+					</li>					
+					<li id="d_ios"><a href="itms-services://?action=download-manifest&url=https://www.apicloud.com:443/zip/c5/66/c56601b83bef9a2ba312138df4eaa596.plist">
+						<span class="ph"> </span>
+						<div class="d-1">
+							<p class="a">iOS 6.13 以上版本</p>
+							<h6 class="store">iPhone 下载</h6>
+						</div>
+					</a>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--download-Ends-Here-->
+	<!--getin-starts-Here-->
+	<div class="getin" id="contact">
+		<div class="container">
+			<div class="getin-top">
+				<h3>联系方式</h3>
+				<img src="images/border.png" alt="">
+				
+			</div>
+			<div class="getin-bottom">
+				<div class="col-md-5">
+					<div class="getin-left">
+						<ul>
+							<li><span class="get-ph"> </span><p>(86) 13329901261</p></li>
+							<li><span class="get-msg"> </span><p><a href="mailto:64913036@qq.com">64913036@qq.com</a></p></li>
+							<li><span class="get-dp"> </span><p></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--getin-ends-Here-->
+	<!--footer-starts-Here-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-main">
+				<a href="#home" class="scroll"><img src="images/top-arw.png" alt=""></a>
+				<h3>返回顶部</h3>
+				<ul>
+					<li><a href="#"><span class="f-f"> </span></a></li>
+					<li><a href="#"><span class="f-t"> </span></a></li>
+					<li><a href="#"><span class="f-g"> </span></a></li>
+					<li><a href="#"><span class="f-in"> </span></a></li>
+					<li><a href="#"><span class="f-c"> </span></a></li>
+				</ul>
+				<p>Copyright &copy; 2015</p>
+			</div>
+		</div>
+	</div>
+	<!--footer-ends-Here-->
+
+</body>
+</html>
