@@ -2,8 +2,8 @@
  * Created by lzw on 14-8-19.
  */
 //我申请的一个应用的appId,appKey，你可以替换成自己的，新建一条工单，便可以看到相应的表
-exports.applicationId='cfovmxevnkn104if9ezodoi9jxdp4h31hlwkltwh7g0r6u05';
-exports.applicationKey='ckfuxlf412uoyfbzs79u21haqr7ovzxdlmp137dhc6ykssyi';
+exports.applicationId='p165kr8no9ycr6sqzoc1swguehqfveoub9zhf5d24d0tl7i1';
+exports.applicationKey='awq8ouvnzfeudlojpad94fck3601nafv4cr265ohd8sbb2gt';
 
 //express用做加密token的salt，自己申请应用搭建时，可稍微更改字符串，可以更安全
 exports.cookieParserSalt="klp4e8b7sddjp2";
